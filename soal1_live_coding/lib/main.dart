@@ -13,9 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.indigo,
-        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
       ),
       darkTheme: ThemeData(
         useMaterial3: true,
@@ -40,10 +38,7 @@ class ProfilePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Profil Mahasiswa'),
         actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.info_outline),
-          ),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.info_outline)),
         ],
       ),
       body: SafeArea(
@@ -76,6 +71,55 @@ class ProfilePage extends StatelessWidget {
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyMedium,
                   ),
+                  const SizedBox(height: 24),
+                  const Card(
+                    child: Column(
+                      children: [
+                        InfoTile(
+                          icon: Icons.email,
+                          label: 'Email',
+                          value: '1124160108@global.ac.id',
+                        ),
+                        InfoTile(
+                          icon: Icons.phone,
+                          label: 'Nomor HP',
+                          value: '083861332776',
+                        ),
+                        InfoTile(
+                          icon: Icons.class_,
+                          label: 'Kelas',
+                          value: 'TISE 24 Malam',
+                        ),
+                        InfoTile(
+                          icon: Icons.code,
+                          label: 'GitHub',
+                          value: 'github.com/ElvizAl',
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  const Card(
+                    child: Column(
+                      children: [
+                        InfoTile(
+                          icon: Icons.computer,
+                          label: 'Keahlian',
+                          value: 'Tidur',
+                        ),
+                        InfoTile(
+                          icon: Icons.sports_esports,
+                          label: 'Hobi',
+                          value: 'Gaming',
+                        ),
+                        InfoTile(
+                          icon: Icons.music_note,
+                          label: 'Hobi',
+                          value: 'Musik',
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -107,4 +151,3 @@ class InfoTile extends StatelessWidget {
     );
   }
 }
-

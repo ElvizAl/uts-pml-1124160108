@@ -39,6 +39,12 @@ class ProfilePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profil Elvis Al-Amsory'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.info_outline),
+          ),
+        ],
       ),
       body: const Center(
         child: Text('Selamat datang di profil saya!'),

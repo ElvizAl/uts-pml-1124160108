@@ -41,6 +41,16 @@ class ProfilePage extends StatelessWidget {
           IconButton(onPressed: () {}, icon: const Icon(Icons.info_outline)),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Terima kasih telah melihat profil saya'),
+            ),
+          );
+        },
+        child: const Icon(Icons.favorite),
+      ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(

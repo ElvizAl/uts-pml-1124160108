@@ -31,8 +31,18 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class ProfilePage extends StatefulWidget {
+class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
 
   @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Profil Elvis Al-Amsory'),
+      ),
+      body: const Center(
+        child: Text('Selamat datang di profil saya!'),
+      ),
+    );
+  }
 }

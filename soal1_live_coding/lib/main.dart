@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-     title: 'Profil Elvis Al-Amsory',
+      title: 'Profil Elvis Al-Amsory',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
@@ -38,7 +38,7 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profil Elvis Al-Amsory'),
+        title: const Text('Profil Mahasiswa'),
         actions: [
           IconButton(
             onPressed: () {},
@@ -46,8 +46,41 @@ class ProfilePage extends StatelessWidget {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Selamat datang di profil saya!'),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: SizedBox(
+              width: double.infinity,
+              child: Column(
+                children: [
+                  const CircleAvatar(
+                    radius: 50,
+                    child: Icon(Icons.person, size: 55),
+                  ),
+                  const SizedBox(height: 16),
+                  Text(
+                    'Nama Mahasiswa',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.headlineSmall,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'NIM: 123456789',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Teknik Informatika',
+                    textAlign: TextAlign.center,
+                    style: Theme.of(context).textTheme.bodyMedium,
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

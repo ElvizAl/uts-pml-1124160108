@@ -22,3 +22,17 @@ class ProfilePage extends StatefulWidget {
 }
 
 
+class _ProfilePageState extends State<ProfilePage> {
+  int _selectedIndex = 0;
+
+  Profile _profile = const Profile(
+    nama: 'Elvis al-amsory',
+    nim: '1124160108',
+    prodi: 'Teknik Informatika',
+    kelas: 'TI SE M 24',
+    bio: 'Saya tertarik pada pengembangan aplikasi dan teknologi AI.',
+    email: 'elvis@gmail.com',
+    hp: '083861332776',
+    github: 'ElvizAl',
+  );
+}

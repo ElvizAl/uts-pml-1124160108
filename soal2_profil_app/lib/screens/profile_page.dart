@@ -6,6 +6,7 @@ import '../widgets/identity_card.dart';
 import '../widgets/profile_header.dart';
 import '../widgets/section_title.dart';
 import 'about_page.dart';
+import 'edit_profile_page.dart';
 
 class ProfilePage extends StatefulWidget {
   final bool isDark;

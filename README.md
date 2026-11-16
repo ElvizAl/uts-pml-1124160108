@@ -49,7 +49,7 @@ Login merupakan simulasi lokal. Gunakan akun di atas sesuai petunjuk pada halama
 
 ## Video Presentasi YouTube
 
-**Belum tersedia — tambahkan tautan video YouTube setelah video diunggah.**
+[Tonton video presentasi UTS PML – Aplikasi Profil – Elvis Al-Amsory – 1124160108](https://youtu.be/0SourA_ORk8?si=E1qKUG1BNHfnzqWN)
 
 Video perlu memperlihatkan aplikasi berjalan pada HP atau emulator Android, alur login, profil, edit dan simpan profil, halaman Tentang Saya, serta pergantian tema.
 

@@ -26,10 +26,10 @@ class _ProfilePageState extends State<ProfilePage> {
   int _selectedIndex = 0;
 
   Profile _profile = const Profile(
-    name: 'Elvis',
-    nim: 'Isi NIM kamu',
-    prodi: 'Isi program studi',
-    kelas: 'Isi kelas',
+    name: 'Elvis al - amsory',
+    nim: '1124160108',
+    prodi: 'Teknik Informatika',
+    kelas: 'TI- SE M 24',
     bio: 'Saya tertarik pada pengembangan aplikasi dan teknologi AI.',
     email: 'elvis@example.com',
     hp: '081234567890',

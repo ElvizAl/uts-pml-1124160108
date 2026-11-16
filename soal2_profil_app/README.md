@@ -45,7 +45,7 @@ Pilih perangkat Android jika tersedia beberapa perangkat. Untuk memilih perangka
 | --- | --- |
 | `elvis@gmail.com` | `123456` |
 
-Login merupakan simulasi lokal. Gunakan akun di atas sesuai pemeriksaan pada kode login. Petunjuk email pada tampilan login saat ini masih mencantumkan `elvis@example.com` dan perlu disamakan.
+Login merupakan simulasi lokal. Gunakan akun di atas sesuai petunjuk pada halaman login.
 
 ## Video Presentasi YouTube
 
@@ -107,3 +107,5 @@ flutter build apk --release
 ```
 
 APK dihasilkan pada `build/app/outputs/flutter-apk/app-release.apk`. Unggah APK tersebut sebagai aset GitHub Releases dengan tag `v1.0.0`, tanpa memasukkan APK ke commit repository.
+
+Build juga dapat dijalankan melalui tab **Actions → Build Android release APK → Run workflow** di GitHub. Workflow menggunakan Flutter 3.47.9, menjalankan analisis dan tes, lalu menyediakan artefak `profil-elvis-release` berisi APK.

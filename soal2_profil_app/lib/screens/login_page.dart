@@ -175,7 +175,7 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(height: 24),
                     const Text(
                       'Akun demo\n'
-                      'Email: elvis@example.com\n'
+                      'Email: elvis@gmail.com\n'
                       'Password: 123456',
                       textAlign: TextAlign.center,
                     ),
